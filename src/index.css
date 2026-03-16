@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* YEH TEEN LINES GAYAB THIN JISKI WAJAH SE BHAND HUA 👇 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Setting the premium font globally */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f1f5f9; 
+}
+
+/* Custom Pro Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Smooth out the range slider */
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: auto;
+}
+
+/* 🌟 PREMIUM REACT DATEPICKER STYLING 🌟 */
+.react-datepicker {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  border: 1px solid #f1f5f9 !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden;
+  background-color: white !important;
+}
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: 1px solid #f8fafc !important;
+  padding: 15px 10px 10px 10px !important;
+}
+.react-datepicker__current-month {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 0.95rem !important;
+  padding-bottom: 5px;
+}
+.react-datepicker__day-name {
+  color: #94a3b8 !important;
+  font-weight: 800 !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase;
+}
+.react-datepicker__day {
+  color: #475569 !important;
+  font-weight: 700 !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.2s ease !important;
+  margin: 0.2rem !important;
+}
+.react-datepicker__day:hover {
+  background-color: #e0e7ff !important;
+  color: #4f46e5 !important;
+  transform: scale(1.1);
+}
+.react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+  background-color: #4f46e5 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3) !important;
+}
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  fill: white !important;
+  color: white !important;
+  stroke: #f1f5f9 !important;
+}
+/* 🌟 PREMIUM DATEPICKER MONTH/YEAR DROPDOWNS 🌟 */
+.react-datepicker__header__dropdown {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.react-datepicker__month-select,
+.react-datepicker__year-select {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.3rem 1.5rem 0.3rem 0.5rem !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  font-family: inherit !important;
+  outline: none !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.5rem center !important;
+  background-size: 1em !important;
+  transition: all 0.2s ease;
+}
+.react-datepicker__month-select:hover,
+.react-datepicker__year-select:hover {
+  border-color: #818cf8 !important;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+/* 🌟 PREMIUM CUSTOM SCROLLBAR 🌟 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Sidebar ke liye thora aur subtle */
+aside ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+aside ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+/* 🌟 PREMIUM APP LOAD ANIMATION 🌟 */
+@keyframes appFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98) translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-app-load {
+  /* 0.8 seconds duration with a buttery smooth easing curve */
+  animation: appFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
